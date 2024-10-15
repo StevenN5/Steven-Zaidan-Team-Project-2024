@@ -1,0 +1,19 @@
+// auth.js
+const express = require('express');
+const router = express.Router();
+
+// POST /login
+router.post('/login', (req, res) => {
+  const { username, password } = req.body;
+  // Authentication logic will be added later
+  res.send('Login route');
+});
+
+// POST /register
+router.post('/register', (req, res) => {
+  const { username, email, password } = req.body;
+  // Registration logic will be added later
+  res.send('Register route');
+});
+
+module.exports = router;
